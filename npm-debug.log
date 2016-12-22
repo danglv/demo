@@ -1,0 +1,196 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'http-server' ]
+2 info using npm@2.1.6
+3 info using node@v0.11.15
+4 verbose node symlink /usr/bin/node
+5 silly cache add args [ 'http-server', null ]
+6 verbose cache add spec http-server
+7 silly cache add parsed spec { raw: 'http-server',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'http-server',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed http-server@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+12 verbose mapToRegistry name http-server
+13 verbose mapToRegistry uri https://registry.npmjs.org/http-server
+14 verbose addNameRange registry:https://registry.npmjs.org/http-server not in flight; fetching
+15 verbose request on initialization, where is /http-server
+16 verbose request after pass 1, where is /http-server
+17 verbose request url raw /http-server
+18 verbose request resolving registry [ 'https://registry.npmjs.org/http-server', './http-server' ]
+19 verbose request after pass 2, where is https://registry.npmjs.org/http-server
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 14:00:58
+22 verbose request id 8290b4a7a3144691
+23 http request GET https://registry.npmjs.org/http-server
+24 http 200 https://registry.npmjs.org/http-server
+25 silly registry.get cb [ 200,
+25 silly registry.get   { server: 'nginx/1.10.1',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'last-modified': 'Sat, 17 Dec 2016 12:48:08 GMT',
+25 silly registry.get     etag: 'W/"58553408-eb43"',
+25 silly registry.get     'content-encoding': 'gzip',
+25 silly registry.get     'cache-control': 'max-age=300',
+25 silly registry.get     'content-length': '7762',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     date: 'Wed, 21 Dec 2016 07:00:58 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'close',
+25 silly registry.get     'x-served-by': 'cache-hkg6824-HKG',
+25 silly registry.get     'x-cache': 'HIT',
+25 silly registry.get     'x-cache-hits': '1',
+25 silly registry.get     'x-timer': 'S1482303658.275839,VS0,VE176',
+25 silly registry.get     vary: 'Accept-Encoding' } ]
+26 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+27 silly addNameRange versions [ 'http-server',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.2.3',
+27 silly addNameRange     '0.2.4',
+27 silly addNameRange     '0.2.5',
+27 silly addNameRange     '0.2.6',
+27 silly addNameRange     '0.2.9',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.4.1',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.5.1',
+27 silly addNameRange     '0.5.2',
+27 silly addNameRange     '0.5.3',
+27 silly addNameRange     '0.5.5',
+27 silly addNameRange     '0.6.0',
+27 silly addNameRange     '0.6.1',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.7.3',
+27 silly addNameRange     '0.7.4',
+27 silly addNameRange     '0.7.5',
+27 silly addNameRange     '0.8.0',
+27 silly addNameRange     '0.8.1',
+27 silly addNameRange     '0.8.2',
+27 silly addNameRange     '0.8.3',
+27 silly addNameRange     '0.8.4',
+27 silly addNameRange     '0.8.5',
+27 silly addNameRange     '0.9.0' ] ]
+28 verbose addNamed http-server@0.9.0
+29 silly addNamed semver.valid 0.9.0
+30 silly addNamed semver.validRange 0.9.0
+31 verbose addRemoteTarball https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz not in flight; adding
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz',
+32 verbose addRemoteTarball   '8f1b06bdc733618d4dc42831c7ba1aff4e06001a' ]
+33 info retry fetch attempt 1 at 14:00:58
+34 info attempt registry request try #1 at 14:00:58
+35 http fetch GET https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz
+36 http fetch 200 https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz
+37 silly fetchAndShaCheck shasum 8f1b06bdc733618d4dc42831c7ba1aff4e06001a
+38 verbose addTmpTarball /tmp/npm-9971-f61e0f2d/registry.npmjs.org/http-server/-/http-server-0.9.0.tgz not in flight; adding
+39 verbose addTmpTarball already have metadata; skipping unpack for http-server@0.9.0
+40 silly cache afterAdd http-server@0.9.0
+41 verbose afterAdd /home/likewise-open/FRAMGIA/la.van.dang/.npm/http-server/0.9.0/package/package.json not in flight; writing
+42 verbose afterAdd /home/likewise-open/FRAMGIA/la.van.dang/.npm/http-server/0.9.0/package/package.json written
+43 silly install resolved [ { name: 'http-server',
+43 silly install resolved     version: '0.9.0',
+43 silly install resolved     description: 'A simple zero-configuration command-line http server',
+43 silly install resolved     main: './lib/http-server',
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git://github.com/indexzero/http-server.git' },
+43 silly install resolved     keywords: [ 'cli', 'command' ],
+43 silly install resolved     scripts:
+43 silly install resolved      { start: 'node ./bin/http-server',
+43 silly install resolved        pretest: 'common bin/http-server lib/ test',
+43 silly install resolved        test: 'vows --spec --isolate' },
+43 silly install resolved     contributors:
+43 silly install resolved      [ [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object] ],
+43 silly install resolved     dependencies:
+43 silly install resolved      { colors: '1.0.3',
+43 silly install resolved        corser: '~2.0.0',
+43 silly install resolved        ecstatic: '^1.4.0',
+43 silly install resolved        'http-proxy': '^1.8.1',
+43 silly install resolved        opener: '~1.4.0',
+43 silly install resolved        optimist: '0.6.x',
+43 silly install resolved        portfinder: '0.4.x',
+43 silly install resolved        union: '~0.4.3' },
+43 silly install resolved     devDependencies: { 'common-style': '^3.0.0', request: '2.49.x', vows: '0.7.x' },
+43 silly install resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+43 silly install resolved     license: 'MIT',
+43 silly install resolved     preferGlobal: 'true',
+43 silly install resolved     bin: { 'http-server': './bin/http-server', hs: './bin/http-server' },
+43 silly install resolved     gitHead: '1a8552c5e028bd5500027ee940111133927a4e94',
+43 silly install resolved     homepage: 'https://github.com/indexzero/http-server#readme',
+43 silly install resolved     _id: 'http-server@0.9.0',
+43 silly install resolved     _shasum: '8f1b06bdc733618d4dc42831c7ba1aff4e06001a',
+43 silly install resolved     _from: 'http-server@*',
+43 silly install resolved     _npmVersion: '3.7.1',
+43 silly install resolved     _nodeVersion: '4.2.2',
+43 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+43 silly install resolved     maintainers: [ [Object] ],
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: '8f1b06bdc733618d4dc42831c7ba1aff4e06001a',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz' },
+43 silly install resolved     _npmOperationalInternal:
+43 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+43 silly install resolved        tmp: 'tmp/http-server-0.9.0.tgz_1455864708425_0.19514421350322664' },
+43 silly install resolved     directories: {},
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.9.0.tgz' } ]
+44 info install http-server@0.9.0 into /usr/lib
+45 info installOne http-server@0.9.0
+46 verbose installOne of http-server to /usr/lib not in flight; installing
+47 verbose lock using /home/likewise-open/FRAMGIA/la.van.dang/.npm/_locks/http-server-92c989ce1dfca3fc.lock for /usr/lib/node_modules/http-server
+48 silly install write writing http-server 0.9.0 to /usr/lib/node_modules/http-server
+49 silly cache addNamed cb http-server@0.9.0
+50 verbose unbuild lib/node_modules/http-server
+51 verbose gentlyRm vacuuming /usr/lib/node_modules/http-server
+52 verbose tar unpack /home/likewise-open/FRAMGIA/la.van.dang/.npm/http-server/0.9.0/package.tgz
+53 verbose tar unpacking to /usr/lib/node_modules/http-server
+54 verbose gentlyRm vacuuming /usr/lib/node_modules/http-server
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 verbose fstream_path /usr/lib/node_modules/http-server
+57 verbose fstream_type Directory
+58 verbose fstream_class DirWriter
+59 verbose stack Error: EACCES, mkdir '/usr/lib/node_modules/http-server'
+59 verbose stack     at Error (native)
+60 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+60 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+60 verbose fstream_stack FSReqWrap.oncomplete (fs.js:99:15)
+61 verbose cwd /home/likewise-open/FRAMGIA/la.van.dang/workspace/demo
+62 error Linux 3.16.0-71-generic
+63 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "http-server"
+64 error node v0.11.15
+65 error npm  v2.1.6
+66 error path /usr/lib/node_modules/http-server
+67 error code EACCES
+68 error errno -13
+69 error Error: EACCES, mkdir '/usr/lib/node_modules/http-server'
+69 error     at Error (native)
+69 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/http-server']
+69 error   errno: -13,
+69 error   code: 'EACCES',
+69 error   path: '/usr/lib/node_modules/http-server',
+69 error   fstream_type: 'Directory',
+69 error   fstream_path: '/usr/lib/node_modules/http-server',
+69 error   fstream_class: 'DirWriter',
+69 error   fstream_stack:
+69 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+69 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+69 error      'FSReqWrap.oncomplete (fs.js:99:15)' ] }
+70 error Please try running this command again as root/Administrator.
+71 verbose exit [ -13, true ]

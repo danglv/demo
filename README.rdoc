@@ -1,0 +1,48 @@
+== README
+- Init rails project
+  + rails-version 4.2.7.1
+  + ruby-version: 2.3.0
+  + unit test: rspec-rails
+  + grape
+  + vcr
+- init grape:
+  + create controllers/api/base.rb and mount it in routes.rb like this:
+    Rails.application.routes.draw do
+      mount API::Base, at: "/"
+    end
+  + create controllers/api/v1/defaults to config common api like:
+    prefix, format, and common helpers(ex: authenticate, status response...)
+  + create controllers/api/v1/base.rb to defind and mount all api resouces of project
+    exam: mount API::V1::Homes for controllers/api/v1/homes resouces
+  + create MockAPI resouces `controllers/api/v1/homes.rb`
+- init vcr
+  + add to rails_helper.rb
+    ```
+      require 'webmock/rspec'
+      require 'vcr'
+      require 'octokit'
+      require 'net/http'
+
+      VCR.configure do |c|
+        c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+        c.hook_into :webmock
+      end
+
+      VCR.use_cassette('user_octokit') do
+        Octokit.user 'octokit'
+      end
+    ```
+  when run "rspec" vcr create fixtures/vcr_cassettes/user_octokit.yml
+  for mock request octokit(sample git api)
+
+  + in resouces "api/v1/homes" create a MockAPI use Net::Http request
+  + create unit test for this mockapi
+    it "vcr" do
+      VCR.use_cassette('sample') do
+        get "/api/v1/homes/info"
+      end
+    end
+  So when run "rspec" vcr create "fixtures/vcr_cassettes/sample.yml" for this request
+
+
+
