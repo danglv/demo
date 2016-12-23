@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 22 Dec 2016 09:39:38 GMT
+      - Fri, 23 Dec 2016 11:07:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d72d97b1324692073102a31648d69ed0c1482399578; expires=Fri, 22-Dec-17
-        09:39:38 GMT; path=/; domain=.typicode.com; HttpOnly
+      - __cfduid=d838752a39ac69c8997999199d43d0baa1482491275; expires=Sat, 23-Dec-17
+        11:07:55 GMT; path=/; domain=.typicode.com; HttpOnly
       X-Powered-By:
       - Express
       Vary:
@@ -42,11 +42,11 @@ http_interactions:
       Pragma:
       - no-cache
       Expires:
-      - Thu, 22 Dec 2016 13:39:38 GMT
+      - Fri, 23 Dec 2016 15:07:55 GMT
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - W/"6b3e-MqXFADuHgZqpyAxNjCiKdQ"
+      - W/"6f41-sRy8TeK+cDbUPbe71SsBFQ"
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 31529b95cf971105-SIN
+      - 315b5a4528b81938-HKG
     body:
       encoding: ASCII-8BIT
       string: |-
@@ -63,7 +63,7 @@ http_interactions:
             "userId": 1,
             "id": 1,
             "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-            "body": "qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy zzzzzzzzzzzzzzzzzzzzzzz o"
+            "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
           },
           {
             "userId": 1,
@@ -658,8 +658,12 @@ http_interactions:
             "id": 100,
             "title": "at nam consequatur ea labore ea harum",
             "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
+          },
+          {
+            "{\"cmd\":\"getData\",\"par\":{\"Instrument\":{\"AC\":{\"crc\":910070015},\"EV\":{\"crc\":192},\"HM\":{\"crc\":910070015},\"IN\":{\"crc\":1}},\"G7104ADE34567890\":{\"AC\":{\"crc\":1579525677},\"FM\":{\"crc\":13},\"HM\":{\"crc\":3261709755},\"IN\":{\"crc\":1},\"ST\":{\"crc\":19},\"SY\":{\"crc\":4124667681},\"TT\":{\"crc\":4294967295}},\"G7116BDE00000009\":{\"AC\":{\"crc\":77173874},\"FM\":{\"crc\":33},\"HM\":{\"crc\":2230980565},\"IN\":{\"crc\":1},\"ST\":{\"crc\":27},\"SY\":{\"crc\":681061192},\"TT\":{\"crc\":4294967295}},\"G7117BDE00000001\":{\"AC\":{\"crc\":2960553112},\"FM\":{\"crc\":13},\"HM\":{\"crc\":419500081},\"IN\":{\"crc\":1},\"ST\":{\"crc\":10},\"SY\":{\"crc\":3296139805},\"TT\":{\"crc\":4294967295}},\"G7167BDE00000002\":{\"AC\":{\"crc\":2506142058},\"FM\":{\"crc\":13},\"HM\":{\"crc\":2252245089},\"IN\":{\"crc\":1},\"ST\":{\"crc\":18},\"SY\":{\"crc\":238182510},\"TT\":{\"crc\":4294967295}}},\"pin\":\"\"}": "",
+            "id": 101
           }
         ]
     http_version: 
-  recorded_at: Thu, 22 Dec 2016 09:39:38 GMT
+  recorded_at: Fri, 23 Dec 2016 11:07:55 GMT
 recorded_with: VCR 3.0.3

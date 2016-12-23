@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+  redis:
+    host: localhost
+    port: 6379
+    db: 0
+    options:
+      namespace: disco-dev
+development:
+  <<: *default
+  database: demo_development
+
+test:
+  <<: *default
+  database: demo_test

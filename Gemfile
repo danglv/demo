@@ -58,4 +58,5 @@ group :development, :test do
   gem 'vcr'
 end
 gem "octokit", "~> 4.0"
+gem "config"
 

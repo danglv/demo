@@ -1,17 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rack/cors'
-
-require "rails"
-# Pick the frameworks you want:
-require "active_model/railtie"
-require "active_job/railtie"
-require "active_record/railtie"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "action_view/railtie"
-require "sprockets/railtie"
-# require "rails/test_unit/railtie"
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -31,29 +20,21 @@ module Demo
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
-    config.autoload_paths += Dir[Rails.root.join('app', 'api', '**', '*.rb')]
-
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    config.middleware.insert_before 0, "Rack::Cors" do
-      allow do
-        origins '*'
-        resource '/api/*', :headers => :any, :methods => [:get, :post, :options]
-      end
-    end
+    config.active_job.queue_adapter = :delayed_job
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
   end
 end
 
-# module Api
-#   class Application < Rails::Application
-#     config.middleware.use Rack::Cors do
-#       allow do
-#         origins "*"
-#         resource "*", headers: :any, methods: [:get,
-#           :post, :put, :delete, :options]
-#       end
-#     end
-#     config.active_record.raise_in_transactional_callbacks = true
-#   end
-# end
+module Api
+  class Application < Rails::Application
+    config.middleware.use Rack::Cors do
+      allow do
+        origins "*"
+        resource "*", headers: :any, methods: [:get, :post, :put, :delete, :options]
+      end
+    end
+    config.active_record.raise_in_transactional_callbacks = true
+  end
+end

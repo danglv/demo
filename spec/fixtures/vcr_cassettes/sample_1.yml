@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/homes/index
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:3000
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '18'
+      Etag:
+      - W/"1ce15f65e3a11be204ce0c3b246075d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07e150ab-1fe6-4fa7-aa58-66cafb564ba3
+      X-Runtime:
+      - '0.125532'
+      Vary:
+      - Origin
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+      Date:
+      - Fri, 23 Dec 2016 11:10:58 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"message":"test"}'
+    http_version: 
+  recorded_at: Fri, 23 Dec 2016 11:10:58 GMT
+recorded_with: VCR 3.0.3
