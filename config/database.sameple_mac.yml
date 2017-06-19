@@ -10,7 +10,7 @@ default: &default
     port: 6379
     db: 0
     options:
-      namespace: disco-dev
+      namespace: demo_dev
 development:
   <<: *default
   database: demo_development

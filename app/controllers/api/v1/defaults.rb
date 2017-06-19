@@ -22,11 +22,23 @@ module API
         end
 
         rescue_from ActiveRecord::RecordNotFound do |e|
-          error_response(message: e.message, status: 404)
+          error!(({error: e.message}),
+            Settings.status.not_found)
         end
 
         rescue_from ActiveRecord::RecordInvalid do |e|
-          error_response(message: e.message, status: 422)
+          error!(({error: e.message}),
+            Settings.status.invalid)
+        end
+
+        rescue_from ActiveRecord::RecordNotUnique do |e|
+          error!(({error: e.message}),
+            Settings.status.conflict)
+        end
+
+        rescue_from Grape::Exceptions::ValidationErrors do |e|
+          error!(({error: e.message}),
+            Settings.status.bad_request)
         end
       end
     end

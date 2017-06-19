@@ -3,4 +3,8 @@ api:
   base_url:
     development: http://localhost:3000
     test: http://localhost:3000
-
+status:
+  bad_request: 400
+  conflict: 409
+  not_found: 404
+  invalid: 422
